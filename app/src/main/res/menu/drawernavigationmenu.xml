@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="drawerNavigationView">
+
+    <group>
+
+    <item
+        android:title="Assess Yourself"
+        android:id="@+id/assessYourself"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_assess"/>
+
+    <item
+        android:title="Call helpline"
+        android:id="@+id/callHelpline"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_call" />
+
+    <item
+        android:title="Precautions"
+        android:id="@+id/precautions"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_precautions"/>
+
+    </group>
+
+    <group>
+
+        <item android:title="More">
+
+            <menu>
+
+                <item
+                    android:title="Share"
+                    android:id="@+id/shareApp"
+                    app:showAsAction="always"
+                    android:icon="@drawable/ic_share"/>
+
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

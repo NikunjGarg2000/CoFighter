@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/updatesFragment">
+
+    <fragment
+        android:id="@+id/updatesFragment"
+        android:name="com.wordpress.myselfnikunj.cofighter.UpdatesFragment"
+        android:label="fragment_updates"
+        tools:layout="@layout/fragment_updates" >
+        <action
+            android:id="@+id/action_updatesFragment_to_affectedCountriesFragment"
+            app:destination="@id/affectedCountriesFragment" />
+        <action
+            android:id="@+id/action_updatesFragment_to_countryDetailsFragment"
+            app:destination="@id/countryDetailsFragment" />
+        <action
+            android:id="@+id/action_updatesFragment_to_indianStatesFragment"
+            app:destination="@id/indianStatesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mediaFragment"
+        android:name="com.wordpress.myselfnikunj.cofighter.MediaFragment"
+        android:label="fragment_media"
+        tools:layout="@layout/fragment_media" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.wordpress.myselfnikunj.cofighter.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/affectedCountriesFragment"
+        android:name="com.wordpress.myselfnikunj.cofighter.AffectedCountriesFragment"
+        android:label="fragment_affected_countries"
+        tools:layout="@layout/fragment_affected_countries" >
+        <action
+            android:id="@+id/action_affectedCountriesFragment_to_countryDetailsFragment"
+            app:destination="@id/countryDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryDetailsFragment"
+        android:name="com.wordpress.myselfnikunj.cofighter.CountryDetailsFragment"
+        android:label="fragment_country_details"
+        tools:layout="@layout/fragment_country_details" />
+    <fragment
+        android:id="@+id/indianStatesFragment"
+        android:name="com.wordpress.myselfnikunj.cofighter.IndianStatesFragment"
+        android:label="fragment_indian_states"
+        tools:layout="@layout/fragment_indian_states" />
+    <fragment
+        android:id="@+id/helplineFragment"
+        android:name="com.wordpress.myselfnikunj.cofighter.HelplineFragment"
+        android:label="fragment_helpline"
+        tools:layout="@layout/fragment_helpline" />
+</navigation>

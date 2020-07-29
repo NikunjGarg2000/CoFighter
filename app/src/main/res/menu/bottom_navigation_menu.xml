@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/updatesFragment"
+        android:title="COVID Updates"
+        android:icon="@drawable/ic_updates"/>
+    <item
+        android:id="@+id/mediaFragment"
+        android:title="Media"
+        android:icon="@drawable/ic_media"/>
+    <item
+        android:id="@+id/mapFragment"
+        android:title="Map"
+        android:icon="@drawable/ic_map"/>
+</menu>
